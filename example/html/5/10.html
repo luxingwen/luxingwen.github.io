@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Universal vertical center with CSS</title>
+	<style type="text/css">
+		#outer{
+			height: 100px;
+			overflow: hidden;
+			position: relative;
+		}
+		#outer[id] {
+			display: table;
+			position: static;
+		}
+		#middle{
+			position: absolute;
+			top: 50%;
+		}
+		#middle[id] {
+			display: table-cell;
+			vertical-align: center;
+		}
+		#inner {
+			position: relative;
+			top: -50%;
+		}
+		.withBorder{
+			border: 1px green solid;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="outer" class="withBorder">
+		<div id="middle">
+			<div id="inner">
+				any text any height any content, everything is vertically centered.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
