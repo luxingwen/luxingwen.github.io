@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="margin: 0;">
+<canvas id="canvas" width="1900" height="960" style="background-image: url('bg.jpg');" ></canvas>
+<script type="text/javascript">
+	 var c = document.getElementById("canvas");
+	 var ctx=c.getContext("2d");
+
+     var x0 = 1600;
+     var y0 = 300;
+     var r0 = 500;
+     function Cicle(x0, y0, r0, ctx){
+     	this.x0 = x0;
+     	this.y0 = y0;
+     	this.r0 = r0;
+     	this.ctx = ctx;
+     	this.scicle1 = new SmallCicle(180, ctx, "F-Food");
+     	this.scicle2 = new SmallCicle(150, ctx, "E-ENERGY");
+     	this.scicle3 = new SmallCicle(120, ctx, "W-WATER");
+
+     	this.draw = function() {
+     		this.ctx.fillStyle = "#FFFFFF";
+	 		this.ctx.strokeStyle = "#FFFFFF";
+     		this.ctx.beginPath();
+    		this.ctx.arc(x0, y0, r0, 80, 360, false);
+    		this.ctx.stroke();
+    		this.scicle1.draw();
+			this.scicle2.draw();
+			this.scicle3.draw();
+     	}
+     	this.reset = function() {
+     		this.ctx.clearRect(0, 0, 1900, 960);
+     		this.draw();
+     	}
+     }
+
+     function SmallCicle(angle, ctx, text, f){
+     	this.angle = angle;
+     	this.x = 0;
+     	this.y = 0;
+     	this.r = 10;
+     	this.ctx = ctx;
+     	this.text = text;
+     	this.callFunc = f;
+     	this.drawFill = function() {
+     		this.ctx.fillStyle = "#FFFFFF";
+			this.ctx.strokeStyle = "#FFFFFF";
+     		var angle0 = this.angle;
+     		this.ctx.beginPath();
+     		var x1 = x0 + r0 * Math.cos(angle0 * Math.PI / 180);
+    		var y1 = y0 + r0 * Math.sin(angle0 * Math.PI / 180);
+    		this.x = x1;
+    		this.y = y1;
+     		this.ctx.beginPath();
+     		this.ctx.arc(x1, y1, this.r, 0, 360, false);
+    		this.ctx.fill();
+     	}
+
+     	this.drawStroke = function() {
+     		this.ctx.fillStyle = "#FFFFFF";
+			this.ctx.strokeStyle = "#FFFFFF";
+     		var angle0 = this.angle;
+     		this.ctx.beginPath();
+     		var x1 = x0 + r0 * Math.cos(angle0 * Math.PI / 180);
+    		var y1 = y0 + r0 * Math.sin(angle0 * Math.PI / 180);
+     		this.ctx.beginPath();
+     		this.ctx.arc(x1, y1, 15, 0, 360, false);
+    		this.ctx.stroke();
+     	}
+
+     	this.drawText = function() {
+     		this.ctx.font = "28px serif";
+     		var angle0 = this.angle;
+     		var x1 = x0 + r0 * Math.cos(angle0 * Math.PI / 180);
+    		var y1 = y0 + r0 * Math.sin(angle0 * Math.PI / 180);
+     		this.ctx.fillText(this.text, x1-ctx.measureText(this.text).width - 50, y1 + 10);
+     	}
+
+     	this.draw = function() {
+     		this.drawFill();
+     		this.drawText();
+     	}
+     }
+
+
+
+    function pointInCicle(x, y, scicle) {
+    	var dx = scicle.x - x;  
+        var dy = scicle.y - y;
+        return dx * dx + dy * dy <= scicle.r * scicle.r;
+    }
+
+    var cicle = new Cicle(x0, y0, r0, ctx);
+    cicle.draw();
+    cicle.scicle1.callFunc = function(){
+    	console.log("scicle1");
+    }
+    cicle.scicle2.callFunc = function(){
+    	console.log("scicle2");
+    }
+    cicle.scicle3.callFunc = function(){
+    	console.log("scicle3");
+    }
+ 
+ 	 window.addEventListener('mousemove',
+   		function (event) {
+        	if (pointInCicle(event.x, event.y, cicle.scicle1)){
+        		cicle.reset();
+        		cicle.scicle1.drawStroke();
+        	}
+        	if(pointInCicle(event.x, event.y, cicle.scicle2)){
+        	 	cicle.reset();
+        		cicle.scicle2.drawStroke();
+        	}
+        	if(pointInCicle(event.x, event.y, cicle.scicle3)){
+        	 	cicle.reset();
+        		cicle.scicle3.drawStroke();
+        	}
+    });
+ 	window.addEventListener('click',
+   		function (event) {
+        	if (pointInCicle(event.x, event.y, cicle.scicle1)){
+        		cicle.scicle1.callFunc();
+        	}
+        	if(pointInCicle(event.x, event.y, cicle.scicle2)){
+        	 	cicle.scicle2.callFunc();
+        	}
+        	if(pointInCicle(event.x, event.y, cicle.scicle3)){
+        	 	cicle.scicle3.callFunc();
+        	}
+    });
+     
+</script>
+</body>
+</html>
