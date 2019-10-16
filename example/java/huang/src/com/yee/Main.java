@@ -78,10 +78,9 @@ public class Main {
         seedNodes.add(new Vertex("3"));
         seedNodes.add(new Vertex("4"));
         seedNodes.add(new Vertex("8"));
-        //Map<Int, Int> result = new HashMap<Int, Int>(); //will store the results
 
         for(int i = 0; i < k; i++){
-           Map<Integer, Vertex> maxMap = new HashMap<Integer, Vertex>();
+            Map<Integer, Vertex> maxMap = new HashMap<Integer, Vertex>();
             Integer maxIndex = new Integer(0);
             Map<Vertex, List<Edge>> graphs = graph.getG();
             for(Vertex vertex : graphs.keySet()){
