@@ -93,7 +93,9 @@ public class Main {
                 Map<Integer, List<Vertex>> layers = singleDiffusion(graph, list);
                 List<Vertex> listMax = layers.get(layers.size());// 获取被集火节点数最多的列表
                 maxMap.put(new Integer(listMax.size()), vertex);
-                maxIndex = new Integer(listMax.size());
+                if(maxIndex<list.size()){
+                    maxIndex = new Integer(listMax.size());
+                }
             }
             Vertex vertexItem = maxMap.get(maxIndex);
             if(!seedNodes.contains(vertexItem)) {
