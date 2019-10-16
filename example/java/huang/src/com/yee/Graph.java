@@ -33,4 +33,8 @@ public class Graph {
         });
     }
 
+    public Map<Vertex, List<Edge>> getG(){
+        return this.adjVertices;
+    }
+
 }
