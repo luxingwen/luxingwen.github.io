@@ -20,8 +20,11 @@ public class Graph {
         Vertex v2 = new Vertex(label2);
         Edge e1 = new Edge(v2,weight);
         this.adjVertices.get(v1).add(e1);
-        Edge e2 = new Edge(v1, weight);
-        this.adjVertices.get(v2).add(e2);
+    }
+
+    public void addEdge(String label, Edge edge){
+        Vertex v = new Vertex(label);
+        this.adjVertices.get(v).add(edge);
     }
 
     public void printGraph(){
