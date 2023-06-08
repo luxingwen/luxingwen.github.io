@@ -17,41 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>玩在广州 | Lewis Xingwen blog</title>
-  <meta name="description" content="不知不觉，已经在广州工作两年多。    广州有啥好玩的地方呢？大部分广州人都会回答你说：没啥好玩的。呆久了，我也会产生这种感觉。回想起来，广州还是有挺多好玩的地方的。  如果你来广州，我会带你去中山纪念堂逛一逛，虽然没啥好看的，但孙中山作为我国近代民族主义的开括者，还是值得一去吧。 随后带你去石圣心大教堂坐一坐。  接着去沙面溜一圈，沙面乃以前的租界，由英国人一手建造而成。 从沙面出来直接坐水巴到">
+  <title>TypeScript-Map类型 | Lewis Xingwen blog</title>
+  <meta name="description" content="在TypeScript中，Map类型用于定义具有特定键和值类型的映射结构。它类似于JavaScript中的Map对象，可以存储键值对，并提供一系列操作方法。 要定义Map类型，需要使用泛型。泛型允许您指定键和值的类型。以下是创建Map类型的基本语法示例： 1let myMap: Map&lt;KeyType, ValueType&gt; &#x3D; new Map&lt;KeyType, ValueTyp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="玩在广州">
-<meta property="og:url" content="https://luxingwen.github.io/2018/09/29/%E7%8E%A9%E5%9C%A8%E5%B9%BF%E5%B7%9E/index.html">
+<meta property="og:title" content="TypeScript-Map类型">
+<meta property="og:url" content="https://luxingwen.github.io/2023/06/08/TypeScript-Map%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="Lewis Xingwen blog">
-<meta property="og:description" content="不知不觉，已经在广州工作两年多。    广州有啥好玩的地方呢？大部分广州人都会回答你说：没啥好玩的。呆久了，我也会产生这种感觉。回想起来，广州还是有挺多好玩的地方的。  如果你来广州，我会带你去中山纪念堂逛一逛，虽然没啥好看的，但孙中山作为我国近代民族主义的开括者，还是值得一去吧。 随后带你去石圣心大教堂坐一坐。  接着去沙面溜一圈，沙面乃以前的租界，由英国人一手建造而成。 从沙面出来直接坐水巴到">
+<meta property="og:description" content="在TypeScript中，Map类型用于定义具有特定键和值类型的映射结构。它类似于JavaScript中的Map对象，可以存储键值对，并提供一系列操作方法。 要定义Map类型，需要使用泛型。泛型允许您指定键和值的类型。以下是创建Map类型的基本语法示例： 1let myMap: Map&lt;KeyType, ValueType&gt; &#x3D; new Map&lt;KeyType, ValueTyp">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/shishengxindajiaotang.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/shuiba.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-ta.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-cbd.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/youguidianche.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-ditie.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-cbd2.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-ta2.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-cbd3.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-liede.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/haixian-1.jpg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-tit.jpg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-hongzhuanchang.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-zhongda.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-zhongda1.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-baiyunsan.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-tiyuxi.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/guangzhou-taiguhui.jpeg">
-<meta property="og:image" content="https://luxingwen.github.io/img/guangzhou/pangzi.png">
-<meta property="article:published_time" content="2018-09-29T14:45:39.000Z">
-<meta property="article:modified_time" content="2020-05-06T05:35:09.398Z">
+<meta property="article:published_time" content="2023-06-08T01:48:04.000Z">
+<meta property="article:modified_time" content="2023-06-08T01:53:15.462Z">
 <meta property="article:author" content="Lewis Xingwen">
-<meta property="article:tag" content="广州">
+<meta property="article:tag" content="TypeScript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://luxingwen.github.io/img/guangzhou/shishengxindajiaotang.jpeg">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://luxingwen.github.io/2018/09/29/%E7%8E%A9%E5%9C%A8%E5%B9%BF%E5%B7%9E/index.html">
+  <link rel="canonical" href="https://luxingwen.github.io/2023/06/08/TypeScript-Map%E7%B1%BB%E5%9E%8B/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Lewis Xingwen blog" type="application/atom+xml">
   
@@ -352,14 +332,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-玩在广州" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-TypeScript-Map类型" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      玩在广州
+      TypeScript-Map类型
     </h1>
   
 
@@ -367,88 +347,73 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2018/09/29/%E7%8E%A9%E5%9C%A8%E5%B9%BF%E5%B7%9E/" class="article-date">
-	  <time datetime="2018-09-29T14:45:39.000Z" itemprop="datePublished">2018-09-29</time>
+	<a href="/2023/06/08/TypeScript-Map%E7%B1%BB%E5%9E%8B/" class="article-date">
+	  <time datetime="2023-06-08T01:48:04.000Z" itemprop="datePublished">2023-06-08</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E5%9C%A8%E8%B7%AF%E4%B8%8A/">在路上</a>
-  </span>
-
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/%E5%B9%BF%E5%B7%9E/" rel="tag">广州</a>
+	<a class="article-tag-link" href="/tags/TypeScript/" rel="tag">TypeScript</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/29/%E7%8E%A9%E5%9C%A8%E5%B9%BF%E5%B7%9E/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/06/08/TypeScript-Map%E7%B1%BB%E5%9E%8B/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>不知不觉，已经在广州工作两年多。</p>
-<blockquote>
-<p>  广州有啥好玩的地方呢？<br>大部分广州人都会回答你说：没啥好玩的。呆久了，我也会产生这种感觉。<br>回想起来，广州还是有挺多好玩的地方的。</p>
-</blockquote>
-<p>如果你来广州，我会带你去中山纪念堂逛一逛，虽然没啥好看的，但孙中山作为我国近代民族主义的开括者，还是值得一去吧。</p>
-<p>随后带你去石圣心大教堂坐一坐。</p>
-<p><img src="/img/guangzhou/shishengxindajiaotang.jpeg" alt="石圣心大教堂.png"></p>
-<p>接着去沙面溜一圈，沙面乃以前的租界，由英国人一手建造而成。</p>
-<p>从沙面出来直接坐水巴到中大港口，水巴和公交车一样，两块钱就能坐。</p>
-<p><img src="/img/guangzhou/shuiba.jpeg" alt="水巴.png"></p>
-<p>然后去中大校园溜达溜达，中大老校区有着许多古老的建筑物到现在依旧保存着。</p>
-<p>从中大出来在继续坐船到广州塔。</p>
-<p>广州塔由称小蛮腰，乃亚洲第一高塔。</p>
-<p><img src="/img/guangzhou/guangzhou-ta.jpeg" alt="广州塔.png"></p>
-<p>在广州塔隔江对面就是广州市中心、CDB、珠江新城。</p>
-<p><img src="/img/guangzhou/guangzhou-cbd.jpeg" alt="珠江新城.png"></p>
-<p>从广州塔下乘坐有鬼（轨）电车到万胜围，途中经过会展中心。也可以进去逛逛（虽然到目前为止我还没有去过）。</p>
-<p><img src="/img/guangzhou/youguidianche.jpeg" alt="有鬼电车.png"></p>
-<p>万胜围（广州地铁博物馆）。</p>
-<p><img src="/img/guangzhou/guangzhou-ditie.jpeg" alt="广州地铁博物馆.png"></p>
-<p>继续搭乘有鬼电车到广州塔。晚上的话可以在琶醍下车，琶醍有很多酒吧，可以到里面喝上几杯。</p>
-<p>广州塔港买船票，夜游珠江，广州的夜景非常的漂亮。</p>
-<p><img src="/img/guangzhou/guangzhou-cbd2.jpeg" alt="珠江新城.png"></p>
-<p>在广州塔搭乘APM（无人自动驾驶列车）到海心沙。</p>
-<p>海心沙是广州举办亚运会的地方，现在上面有许多餐厅，很有情调。</p>
-<p><img src="/img/guangzhou/guangzhou-ta2.jpeg" alt="小蛮腰.png"></p>
-<p>随后在花城广场转一转。广州图书馆趁一下Wi-Fi，广图的Wi-Fi速度非常快，我经常去趁。</p>
-<p><img src="/img/guangzhou/guangzhou-cbd3.jpeg" alt="珠江新城.png"></p>
-<p>猎德大桥上走一走？我觉得猎德大桥是广州最帅的桥，我每天上班都要从上面经过，尽管每次都塞车，但是我还是觉得它很帅。</p>
-<p><img src="/img/guangzhou/guangzhou-liede.jpeg" alt="广州最帅的桥.png"></p>
-<p>去黄沙这个免费的水族管看海洋生物，顺便大吃一顿。</p>
-<p><img src="/img/guangzhou/haixian-1.jpg" alt="海鲜.png"></p>
-<p>TIT创意园走一圈？ 微信总部就在此。不去看一看？</p>
-<p><img src="/img/guangzhou/guangzhou-tit.jpg" alt="tit.png"></p>
-<p>红砖厂，你也许觉得它很破，不过它确实很破。</p>
-<p><img src="/img/guangzhou/guangzhou-hongzhuanchang.jpeg" alt="红砖厂.png"></p>
-<p>骑着自行车。绕着大学城岛逛一圈，广州名校基本集聚于此。</p>
-<p><img src="/img/guangzhou/guangzhou-zhongda.jpeg" alt="天河二号.png"></p>
-<p><img src="/img/guangzhou/guangzhou-zhongda1.jpeg" alt="中大校园.png"></p>
-<p>可以到黄埔军校参观一下，很多名将从这里出身，周围的风景也挺不错。</p>
-<p>节假日的话，去岭南印象园体验岭南乡土风情和岭南民俗文化。有表演，当然人也挺多。</p>
-<p>爬山爱好者的话，可以到白云山玩一玩。</p>
-<p><img src="/img/guangzhou/guangzhou-baiyunsan.jpeg" alt="白云山.png"></p>
-<p>游乐场-》长隆欢乐世界，到现在我都还木有去过呢，应该挺好玩的。</p>
-<p>沙湾古镇，宝墨园，这两个去过一次，还好，就是有点远。</p>
-<p>有时间的话可以跑到广州的最南端南沙。可以吃到较便宜的海鲜（相对市区来说），到南沙客运港看一看，可以从那里坐船到世界各地的。这里也是珠江的入海口，对大海有很大期望的建议还是先别来了。</p>
-<h4 id="购物"><a href="#购物" class="headerlink" title="购物"></a>购物</h4><p>我觉得，广州就是女生的购物天堂啊。专门为女生设计的一般…</p>
-<p>带你去体育中心、体育西逛一圈。天环广场Apple store里面免费玩下最新款的苹果全家桶。</p>
-<p><img src="/img/guangzhou/guangzhou-tiyuxi.jpeg" alt="体育中心.png"></p>
-<p>太古汇看名牌。土豪的你在里面买上几个lv包也挺不错，顺便我也沾沾光，毕竟我每天上下班在门口走来走去也未曾进去逛过。</p>
-<p><img src="/img/guangzhou/guangzhou-taiguhui.jpeg" alt="太古汇.png"></p>
-<p>还不够的话，再去上下九溜达一圈。</p>
-<p>还在不行？自己溜达去吧。腿都要走断了…</p>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>留下来体验下上下班高峰的广州地铁，特别是3号线和5号线。</p>
-<p><img src="/img/guangzhou/pangzi.png" alt="胖子挤地铁.png"></p>
-<p>以上就是不怎么靠谱广州旅游推荐。</p>
-<p>漂亮的广州，等待最美的你。</p>
+        <p>在TypeScript中，Map类型用于定义具有特定键和值类型的映射结构。它类似于JavaScript中的Map对象，可以存储键值对，并提供一系列操作方法。</p>
+<p>要定义Map类型，需要使用泛型。泛型允许您指定键和值的类型。以下是创建Map类型的基本语法示例：</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myMap: Map&lt;KeyType, ValueType&gt; = <span class="keyword">new</span> Map&lt;KeyType, ValueType&gt;();</span><br></pre></td></tr></table></figure>
+
+<p>在上面的代码中，KeyType和ValueType是您希望在Map中使用的键和值的类型。</p>
+<p>以下是一个具体的示例，演示如何使用Map类型：</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个字符串到数字的映射</span></span><br><span class="line"><span class="keyword">let</span> numberMap: Map&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt; = <span class="keyword">new</span> Map&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加键值对</span></span><br><span class="line">numberMap.set(<span class="string">'one'</span>, <span class="number">1</span>);</span><br><span class="line">numberMap.set(<span class="string">'two'</span>, <span class="number">2</span>);</span><br><span class="line">numberMap.set(<span class="string">'three'</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取值</span></span><br><span class="line"><span class="built_in">console</span>.log(numberMap.get(<span class="string">'two'</span>)); <span class="comment">// 输出: 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 检查键是否存在</span></span><br><span class="line"><span class="built_in">console</span>.log(numberMap.has(<span class="string">'four'</span>)); <span class="comment">// 输出: false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 迭代所有键值对</span></span><br><span class="line">numberMap.forEach(<span class="function">(<span class="params">value, key</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;key&#125;</span>: <span class="subst">$&#123;value&#125;</span>`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>当涉及到 TypeScript 中的 Map 类型时，有许多可以用于操作和访问映射的方法和属性。以下是一些常用的 Map 方法函数的示例：</p>
+<ol>
+<li><p><code>set(key, value)</code>: 向 Map 中添加一个键值对。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myMap: Map&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt; = <span class="keyword">new</span> Map&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt;();</span><br><span class="line">myMap.set(<span class="string">'one'</span>, <span class="number">1</span>);</span><br><span class="line">myMap.set(<span class="string">'two'</span>, <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>get(key)</code>: 获取给定键的值。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(myMap.get(<span class="string">'one'</span>)); <span class="comment">// 输出: 1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>has(key)</code>: 检查指定键是否存在于 Map 中。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(myMap.has(<span class="string">'two'</span>)); <span class="comment">// 输出: true</span></span><br><span class="line"><span class="built_in">console</span>.log(myMap.has(<span class="string">'three'</span>)); <span class="comment">// 输出: false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>delete(key)</code>: 删除指定键的值。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">myMap.delete(<span class="string">'one'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(myMap.has(<span class="string">'one'</span>)); <span class="comment">// 输出: false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>clear()</code>: 清空 Map 中的所有键值对。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">myMap.clear();</span><br><span class="line"><span class="built_in">console</span>.log(myMap.size); <span class="comment">// 输出: 0</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>size</code>: 获取 Map 中键值对的数量。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(myMap.size);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>forEach(callback)</code>: 迭代 Map 中的键值对，并对每个键值对执行回调函数。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myMap.forEach(<span class="function">(<span class="params">value, key</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;key&#125;</span>: <span class="subst">$&#123;value&#125;</span>`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>keys()</code>: 返回一个包含 Map 中所有键的迭代器。可以使用 <code>for...of</code> 循环或 <code>Array.from()</code> 方法来遍历迭代器并访问键。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myMap: Map&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt; = <span class="keyword">new</span> Map&lt;<span class="built_in">string</span>, <span class="built_in">number</span>&gt;();</span><br><span class="line">myMap.set(<span class="string">'one'</span>, <span class="number">1</span>);</span><br><span class="line">myMap.set(<span class="string">'two'</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> keysIterator = myMap.keys();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key of keysIterator) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(key);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出:</span></span><br><span class="line"><span class="comment">// one</span></span><br><span class="line"><span class="comment">// two</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者使用 Array.from() 方法将迭代器转换为数组</span></span><br><span class="line"><span class="keyword">let</span> keysArray = <span class="built_in">Array</span>.from(myMap.keys());</span><br><span class="line"><span class="built_in">console</span>.log(keysArray); <span class="comment">// 输出: ['one', 'two']</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>values()</code>: 返回一个包含 Map 中所有值的迭代器。可以使用 <code>for...of</code> 循环或 <code>Array.from()</code> 方法来遍历迭代器并访问值。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> valuesIterator = myMap.values();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> value of valuesIterator) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出:</span></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者使用 Array.from() 方法将迭代器转换为数组</span></span><br><span class="line"><span class="keyword">let</span> valuesArray = <span class="built_in">Array</span>.from(myMap.values());</span><br><span class="line"><span class="built_in">console</span>.log(valuesArray); <span class="comment">// 输出: [1, 2]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>entries()</code>: 返回一个包含 Map 中所有键值对的迭代器。每个键值对都表示为一个数组 <code>[key, value]</code>。可以使用 <code>for...of</code> 循环或 <code>Array.from()</code> 方法来遍历迭代器并访问键值对。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> entriesIterator = myMap.entries();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> entry of entriesIterator) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(entry[<span class="number">0</span>], entry[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出:</span></span><br><span class="line"><span class="comment">// one 1</span></span><br><span class="line"><span class="comment">// two 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者使用 Array.from() 方法将迭代器转换为数组</span></span><br><span class="line"><span class="keyword">let</span> entriesArray = <span class="built_in">Array</span>.from(myMap.entries());</span><br><span class="line"><span class="built_in">console</span>.log(entriesArray);</span><br><span class="line"><span class="comment">// 输出: [['one', 1], ['two', 2]]</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>请注意，迭代器方法返回的是一个迭代器对象，可以使用 <code>for...of</code> 循环来遍历其内容。或者，您可以使用 <code>Array.from()</code> 方法将迭代器转换为数组。</p>
+<p>这些方法提供了一种遍历 Map 中键、值或键值对的方式，使您能够对它们进行进一步处理和操作。</p>
+<p>希望这些说明对您有帮助！</p>
 
       
     </div>
@@ -458,7 +423,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://luxingwen.github.io/2018/09/29/%E7%8E%A9%E5%9C%A8%E5%B9%BF%E5%B7%9E/" title="玩在广州" target="_blank" rel="external">https://luxingwen.github.io/2018/09/29/%E7%8E%A9%E5%9C%A8%E5%B9%BF%E5%B7%9E/</a>
+      <a href="https://luxingwen.github.io/2023/06/08/TypeScript-Map%E7%B1%BB%E5%9E%8B/" title="TypeScript-Map类型" target="_blank" rel="external">https://luxingwen.github.io/2023/06/08/TypeScript-Map%E7%B1%BB%E5%9E%8B/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -504,13 +469,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2019/03/10/%E6%A1%82%E6%9E%97%E9%98%B3%E6%9C%94%E4%B8%A4%E6%97%A5%E6%B8%B8/" title="桂林阳朔两日游"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2018/03/21/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" title="深度优先搜索和广度优先搜索"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2023/06/07/MySql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="MySql基础知识"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
